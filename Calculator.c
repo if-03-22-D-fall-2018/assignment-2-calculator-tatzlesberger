@@ -21,6 +21,23 @@ int number;
 
     scanf("%d\n", &number);
     printf("%d\n",number);
+
+    if(number == 1)
+    {
+      int summandOne;
+      int summandTwo;
+      int sum;
+
+      printf("1. Summand: ");
+      scanf("%d\n", summandOne );
+      printf("2. Summand: ");
+      scanf("%d\n", summandTwo);
+
+      sum = summandOne+summandTwo;
+
+      printf("Ergebniss: %d\n", sum);
+    }
+
 } while(number != -1);
 
   return 0;
