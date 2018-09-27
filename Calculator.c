@@ -9,7 +9,7 @@ int main(int argc, char const *argv[]) {
 
 int number;
 
-  do {
+
     printf("Wählen sie eine Option\n");
     printf("Add(1)\n");
     printf("Subtract(2)\n");
@@ -18,9 +18,7 @@ int number;
     printf("Stop Programm (-1)\n");
 
     printf("Enter your Choice: ");
-
-    scanf("%d\n", &number);
-    printf("%d\n",number);
+    scanf("%d", &number);
 
     if(number == 1)
     {
@@ -29,16 +27,34 @@ int number;
       int sum;
 
       printf("1. Summand: ");
-      scanf("%d\n", summandOne );
+      scanf("%d", &summandOne );
       printf("2. Summand: ");
-      scanf("%d\n", summandTwo);
+      scanf("%d", &summandTwo);
 
       sum = summandOne+summandTwo;
 
       printf("Ergebniss: %d\n", sum);
     }
+    else if(number == 2)
+    {
+      int subtrahent;
+      int minuent;
+      int differenc;
 
-} while(number != -1);
+      printf("Minuend: ");
+      scanf("%d", &minuent );
+      printf("Subtrahend: ");
+      scanf("%d", &subtrahent);
+
+      differenc = minuent - subtrahent;
+
+      printf("Erbegbniss: %d", differenc );
+    }
+    else if(number == 3)
+    {
+
+    }
+    else if(number == 4)
 
   return 0;
 }
